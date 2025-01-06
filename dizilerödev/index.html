@@ -1,0 +1,94 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diziler</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .container{
+            width: 100%;
+            height: 100vh;
+            background-color: #0050fd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .main{
+            padding: 50px;
+            background-color: #fff;
+            border-radius: 10px;
+            width: 20%;
+            margin: 10px;
+        }
+        h2{
+            margin-bottom: 20px;
+        }
+        label{
+            margin-bottom: 10px;
+            display: block;
+        }
+        #txtekle{
+            text-decoration: none;
+            margin-bottom: 10px;
+            font-size: 24px;
+            width: 100%;
+            border-radius: 10px;
+            height: 40px;
+            border: 2px solid #616161;
+            padding: 5px;
+        }
+        #btnekle{
+            width: 100%;
+            padding: 10px;
+            text-decoration: none;
+            background-color: #590ea0;
+            color: #fff;
+            border: 1px solid #000000;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 10PX;
+        }
+        #btnekle:hover{
+            background-color:#3b3a3a;            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <h2>YAZI YAZ</h2>
+            <input type="text" id="txtekle"><br>
+            <input type="button" id="btnekle" value="Ekle" onclick="ekle()">
+        </div>
+        <div class="main">
+            <p id="txtdizi"></p>                    
+        </div>
+    </div>
+
+    <script>
+        var dizi = [];
+
+        function ekle() {
+            let deger = document.getElementById("txtekle").value.trim();
+            let metin = document.getElementById("txtdizi");
+
+            if (deger !== "") {
+                dizi.push(deger);
+                metin.innerText = dizi.join(", ");
+                document.getElementById("txtekle").value = "";
+            }
+            else {
+                alert('Lütfen bir değer girin!');
+            }
+        }
+    </script>
+
+
+</body>
+</html>

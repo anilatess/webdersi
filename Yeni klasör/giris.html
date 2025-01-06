@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="giris.css">
+</head>
+<body>
+    <div class="container">
+        <div class="loginkutu">
+            <!-- Soldaki görsel kısmı -->
+            <div class="image">
+                <img src="https://via.placeholder.com/350x450" alt="Background Image">
+            </div>
+            <!-- Soldaki görsel kısmı -->
+
+            <div class="sag">
+                <h2>GİRİŞ YAPINIZ</h2>
+
+                <form id="login-form">
+                    <input id="email" class="email" type="email" placeholder="Email Address" >
+                    <input id="password" class="sifre" type="password" placeholder="Password" >
+                    <button type="button" class="login" onclick="login()">LOGIN</button>
+                </form>
+
+                <a href="#" class="sifresıfırla">Şifremi Unuttum</a>
+
+                <div class="social-buttons">
+                    <button class="facebook">facebook</button>
+                    <button class="google">google</button>
+                    <button class="twitter">twitter</button>
+                </div>
+
+                <p>Hesabın yok mu? <a href="#" class="register">Kayıt Ol</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

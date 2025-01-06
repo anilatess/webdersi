@@ -1,0 +1,151 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00509e;
+    color: white;
+    padding: 15px 20px;
+}
+
+.adminlogin{
+    width: 100px;
+    height: 25px;
+    border-radius: 5px;
+    background-color: #1bbeb6;
+    color:#000000;
+    border: none;
+    cursor: pointer;
+
+}
+
+.header .logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    background-color: #0074d9;
+    color: white;
+    padding: 50px 20px;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    background-color: #fca311;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.hero .btn:hover {
+    background-color: #e08e00;
+}
+
+.araba {
+    padding: 40px 20px;
+    text-align: center;
+    flex: 1; 
+}
+
+.araba h2 {
+    margin-bottom: 20px;
+}
+
+.araba-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.araba-card {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+}
+
+.araba-card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.araba-card h3 {
+    margin: 10px 0;
+}
+
+.araba-card p {
+    margin: 10px 0;
+}
+
+.araba-card .btn {
+    background-color: #00509e;
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: auto; 
+}
+
+.araba-card .btn:hover {
+    background-color: #003f7d;
+}
+
+
+/* Footer */
+.footer {
+    text-align: center;
+    background-color: #00509e;
+    color: white;
+    padding: 15px 20px;
+    margin-top: auto; 
+}
