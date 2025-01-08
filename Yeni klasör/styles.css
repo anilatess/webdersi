@@ -1,4 +1,3 @@
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,32 +6,31 @@ body {
     background-color: #f4f4f4;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-}
 
+}
+/* Header Başlangıç */
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #00509e;
     color: white;
-    padding: 15px 20px;
+    padding: 20px 20px;
 }
 
-.adminlogin{
+.header .logo h1{
+    margin: 0px;
+    font-size: 25px;
+}
+
+.adminlogin {
     width: 100px;
     height: 25px;
     border-radius: 5px;
     background-color: #1bbeb6;
-    color:#000000;
+    color: #000000;
     border: none;
     cursor: pointer;
-
-}
-
-.header .logo h1 {
-    margin: 0;
-    font-size: 24px;
 }
 
 .nav ul {
@@ -46,14 +44,12 @@ body {
 .nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 16px;
 }
 
-.nav ul li a:hover {
-    text-decoration: underline;
-}
+/* Header Bitiş */
 
-/* Hero */
+/* Hero Başlangıç */
+
 .hero {
     text-align: center;
     background-color: #0074d9;
@@ -61,69 +57,40 @@ body {
     padding: 50px 20px;
 }
 
-.hero h2 {
-    font-size: 36px;
-    margin-bottom: 10px;
+.herologo {
+    width: 150px;
+
 }
 
-.hero p {
-    font-size: 18px;
-    margin-bottom: 20px;
-}
+/* Hero Bitiş */
 
-.hero .btn {
-    background-color: #fca311;
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 18px;
-}
-
-.hero .btn:hover {
-    background-color: #e08e00;
-}
+/* Kart Başlangıç */
 
 .araba {
     padding: 40px 20px;
     text-align: center;
-    flex: 1; 
-}
-
-.araba h2 {
-    margin-bottom: 20px;
+    flex: 1;
 }
 
 .araba-list {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
     gap: 20px;
-    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .araba-card {
-    display: flex; 
-    flex-direction: column; 
-    justify-content: space-between; 
     background: white;
-    padding: 15px;
+    padding: 45px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 250px;
     text-align: center;
+    width: 400px;
 }
 
 .araba-card img {
     max-width: 100%;
     border-radius: 5px;
-}
-
-.araba-card h3 {
-    margin: 10px 0;
-}
-
-.araba-card p {
-    margin: 10px 0;
 }
 
 .araba-card .btn {
@@ -133,19 +100,19 @@ body {
     padding: 8px 15px;
     border-radius: 5px;
     display: inline-block;
-    margin-top: auto; 
+    
 }
 
-.araba-card .btn:hover {
-    background-color: #003f7d;
-}
+/* Kart Bitiş */
 
 
-/* Footer */
+
+/* Footer Başlangıç */
 .footer {
     text-align: center;
-    background-color: #00509e;
+    background-color: #003f7d; 
     color: white;
-    padding: 15px 20px;
-    margin-top: auto; 
+    padding: 10px 0; 
+    font-size: 14px;
 }
+/* Footer Bitiş */

@@ -6,7 +6,7 @@ function login() {
    
     if (email === 'abc@gmail.com' && password === '1234') {
 
-        window.location.href = 'index.html';
+        window.location.href = 'admin.html';
     } else {
              alert('Invalid email or password!');
     }
