@@ -1,0 +1,169 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+
+
+}
+
+/* Header Başlangıç */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00509e;
+    color: white;
+    padding: 20px 20px;
+}
+
+.header .logo h1{
+    margin: 0px;
+    font-size: 25px;
+}
+
+.adminlogin {
+    width: 100px;
+    height: 25px;
+    border-radius: 5px;
+    background-color: #1bbeb6;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+}
+
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Header Bitiş */
+
+
+
+/* Hero Başlangıç */
+
+.hero {
+    text-align: center;
+    background-color: #0074d9;
+    color: white;
+    padding: 50px 20px;
+}
+
+.hero h2 {
+    margin-bottom: 10px;
+}
+
+/* Hero Bitiş */
+
+
+
+/* Biz Kimiz Başlangıç */
+.hakkımızda {
+    flex: 1;
+    display: flex;
+    gap: 20px;
+    margin: 30px auto;
+    max-width: 1000px;
+    padding: 20px;
+    align-items: center;
+}
+
+.hakkımızda h3, p{
+    text-align: center;
+}
+/* Biz Kimiz Bitiş */
+
+
+/* Misyon Ve Vizyon Başlangıç */
+
+.misyon-vizyon {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 40px auto;
+    max-width: 1000px;
+    padding: 20px;
+}
+
+.kart {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(4, 68, 141, 0.2);
+    text-align: center;
+}
+
+.kart h3 {
+    color: #00509e;
+    margin-bottom: 15px;
+}
+
+.kart p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Misyon Ve Vizyon Bitiş */
+
+
+/* Ekibimiz Başlangıç */
+.takim {
+    margin: 30px auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.takim h3 {
+    color: #00509e;
+    margin-bottom: 25px;
+
+}
+
+.takim-üyeleri {
+    display: flex;
+    gap: 150px;
+    justify-content: center;
+}
+
+.üye {
+    text-align: center;
+  
+}
+
+.üye img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.üye h4 {
+    margin: 10px 0 5px;
+}
+
+/* Ekibimiz Bitiş */
+
+/* Footer Başlangıç */
+.footer {
+    text-align: center;
+    background-color: #003f7d; 
+    color: white;
+    padding: 10px 0; 
+    font-size: 14px;
+}
+/* Footer Bitiş */
