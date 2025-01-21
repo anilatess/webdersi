@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayıt Ol</title>
+    <link rel="stylesheet" href="/Yeni klasör/CSS/kayitsayfasi.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <img src="/img/logoo.jpg" alt="Logo" class="logo">
+            <h2>KAYIT OL</h2>
+            <div id="registerForm">
+                <input type="text" id="fullName" placeholder="Ad Soyad" required>
+                <input type="email" id="email" placeholder="Email Address" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <input type="password" id="confirmPassword" placeholder="Şifre Tekrar" required>
+                <button type="submit" class="btn">Kayıt Ol</button>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        // Formu seç
+const registerForm = document.getElementById('registerForm');
+
+// Form gönderildiğinde çalışacak olay
+registerForm.addEventListener('submit', function (event) {
+    event.preventDefault(); // Formun varsayılan gönderimini engelle
+
+    // Form bilgilerini al
+    const fullName = document.getElementById('fullName').value;
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+    const confirmPassword = document.getElementById('confirmPassword').value;
+
+    // Şifrelerin eşleşip eşleşmediğini kontrol et
+    if (password !== confirmPassword) {
+        alert('Şifreler eşleşmiyor!');
+        return;
+    }
+
+    // Bilgileri localStorage'a kaydet
+    localStorage.setItem('fullName', fullName);
+    localStorage.setItem('email', email);
+    localStorage.setItem('password', password);
+
+    // giris.html sayfasına yönlendir
+    window.location.href = 'giris.html';
+});
+
+
+    </script>
+</body>
+</html>

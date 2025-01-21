@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
-    <link rel="stylesheet" href="/Yeni klasör/CSS/giris.css">
+    <link rel="stylesheet" href="/Yeni klasör/CSS/girisadmin.css">
 </head>
 <body>
     <div class="container">
@@ -16,7 +16,7 @@
             <!-- Soldaki görsel kısmı -->
 
             <div class="sag">
-                <h2>GİRİŞ YAPINIZ</h2>
+                <h2>KULLANICI GİRİŞİ</h2>
 
                 <form id="login-form">
                     <input id="email" class="email" type="email" placeholder="Email Address" >
@@ -31,13 +31,30 @@
                     <button class="google">google</button>
                     <button class="twitter">twitter</button>
                 </div>
+                <p>Hesabın yok mu? <a href="kayitsayfasi.html" class="register">Kayıt Ol</a></p>
 
-                <p>Hesabın yok mu? <a href="#" class="register">Kayıt Ol</a></p>
+
             </div>
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script >
+        function login() {
+    
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+
+   
+    if (email === 'abc@gmail.com' && password === '1234') {
+
+        window.location.href = '/Yeni klasör/HTML/loginindex.html';
+    } else {
+             alert('Invalid email or password!');
+    }
+}
+
+
+    </script>
 
 </body>
 </html>
